@@ -1,0 +1,16 @@
+*
+!*.*
+!/**/
+!Makefile
+*.pdb
+*.bin
+*.obj
+*.o
+*.ilk
+*.exe
+*.d
+build/
+bin/
+lib/
+.vscode
+target

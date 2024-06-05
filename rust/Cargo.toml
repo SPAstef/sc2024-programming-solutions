@@ -1,0 +1,43 @@
+[package]
+name = "symmetric-crypto-exercises"
+version = "1.0.0"
+authors = ["Stefano Trevisani"]
+
+[[bin]]
+name = "circulant_mul"
+path = "src/circulant_mul.rs"
+
+[[bin]]
+name = "find_inverse"
+path = "src/find_inverse.rs"
+
+[[bin]]
+name = "mod_pow"
+path = "src/mod_pow.rs"
+
+[[bin]]
+name = "poly_mul"
+path = "src/poly_mul.rs"
+
+[[bin]]
+name = "inner_prod"
+path = "src/inner_prod.rs"
+
+[[bin]]
+name = "fq_pow"
+path = "src/fq_pow.rs"
+
+[[bin]]
+name = "test"
+path = "src/test.rs"
+
+
+#[profile.dev]
+#opt-level = 0
+
+[profile.release]
+opt-level = 3
+strip = true
+debug-assertions = false
+overflow-checks = false
+lto = true
